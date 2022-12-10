@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransExpress</title>
+    <!-- Links -->
+    <link rel="shortcut icon" href="images/webscustoms-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+<body>
+    <!-- HOME BUTTON -->
+    <div class="home-btn">
+        <form action="#home">
+            <button>
+                <i class="fa fa-arrow-up"></i>
+            </button>
+        </form>
+    </div>
+    <!-- PRELOAD ANIMATION -->
+    <div class="loader_bg">
+            <img class="loader" src="images/MOLDCARGO-logo.png" alt="">
+    </div>
+    
+    <!-- NAVIGATION BAR -->
+    <section class="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="images/MOLDCARGO-logo.png" alt=""> </a>           
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="home">Acasă</a></li>
+                <li class="non-active"><a href="about">Despre Noi</a></li>
+                <li class="non-active"><a href="career">Carieră</a></li>
+                <li class="non-active"><a href="services">Servicii</a></li>
+                <li class="non-active"><a href="contact">Contacte</a></li>
+            </ul>
+        </nav>
+        <div class="hamb">
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <div id="hambmenu">
+                <div class="xbutton"><i class="fa-light fa-solid fa-xmark"></i></div>
+                <div class="nav">
+                    <ul>
+                        <li class="active"><a href="home">Acasă</a></li>
+                        <li class="non-active"><a href="about">Despre Noi</a></li>
+                        <li class="non-active"><a href="career">Carieră</a></li>
+                        <li class="non-active"><a href="services">Servicii</a></li>
+                        <li class="non-active"><a href="contact">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="program box">
+                        <label for="">Program de lucru</label>
+                        <div class="text">Luni - Vineri</div>
+                        <div class="tex">9:00 - 18:00</div>
+                    </div>
+                    <div class="telefon box">
+                        <label for="">Telefon</label>
+                        <div class="text">+373 060 510 236</div>
+                        <div class="text">+373 060 132 295</div>
+                    </div>
+                    <div class="email box">
+                        <label for="">Email</label>
+                        <div class="text">moldcargo@trans.com</div>
+                    </div>
+                    <div class="social-media">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- HOME -->
+    <section id="home" class="home" style="padding-top: 8vh;">
+        <div class="w3-content w3-display-container" style="max-width:100%; height: 70vh; overflow: hidden;">
+            <div class="mySlides w3-animate-opacity ">
+                <div class="img1-content">
+                    <div class="img1"><img src="images/truckphoto1.png"></div>
+                    <div class="content">
+                        <h1>Servicii de Transport în Întreaga Lume</h2>
+                        <p>Compania <span>MOLDCARGO-TRANS</span> vă oferă soluții de transporturi de marfă cu camioane echipate cu remorci cu prelate, cu remorci frigorifice sau dube închise, atît la Export cît și la Import</p>
+                        <button type="submit"><a href="about">Explorează</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides w3-animate-opacity ">
+                <div class="img2-content">
+                    <div class="img2"><img src="images/truckphoto2.png"></div>
+                    <div class="content">
+                        <h1>Transportul Marfei în Siguranță</h2>
+                        <p><span>MOLDCARGO-TRANS</span> este formată din specialişti calificaţi bazându-ne pe o îndelungată experienţă şi cunoştinţe profesionale solide în toate ramurile transportului de marfă, a lanțului complet de logistică și aprovizionare. Suntem eficienți, pragmatici, clari și onești.</p>
+                        <button type="submit"><a href="about">Explorează</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides w3-animate-opacity ">
+                <div class="img3-content">
+                    <div class="img3"><img src="images/truckphoto3.png""></div>
+                    <div class="content">
+                        <h1>Mai multe detalii</h2>
+                        <p>Efectuăm curse de transport către orice locaţie din Europa, cu autocamioane moderne, şoferi experimentaţi şi costuri optime. Reacționăm în mod individual și flexibil la nevoile și interesele companiei tale și la schimbările curente ale pieței.</p>
+                        <button type="submit"><a href="about">Explorează</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-center w3-container w3-section w3-large w3-display-bottommiddle buttons" style="width:100%">
+              <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+              <span class="w3-badge demo w3-transparent " onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-transparent " onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-transparent " onclick="currentDiv(3)"></span>
+            </div>
+            
+          </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="content">
+            <div class="box-1 box">
+                <img src="images/safeshipment-icon.png" alt="">
+                <h3>100% TRANSPORT ÎN SIGURANȚĂ</h3>
+                <p>Pentru a realiza transportul internațional fiecare vehicul dispune de de asigurare CMR a mărfii cu limita de răspundere de 300000€. Marfa dumneavoastră este întodeauna în siguranță.</p>
+            </div>
+            <div class="box-2 box">
+                <img src="images/loadtruck-icon.png" alt="">
+                <h3>FLOTĂ MODERNĂ DE CAMIOANE</h3>
+                <p>MOLDCARGO-TRANS dispune de o flotă modernă de camioane de transport marfă, cu normele EURO 5 și EURO 6 care garanteaza un transport de maxima calitate si flexibilitate.</p>
+            </div>
+            <div class="box-3 box">
+                <img src="images/document-icon.png" alt="">
+                <h3>TRANSPORT LA TIMP</h3>
+                <p>Utilizînd serviciile de transport a companei INCARGO, va asigurați că marfa Dvs va ajunge la destinație la momentul cînd aceasta este necesar, reducînd costurile de stoc și depozitare.</p>
+            </div>
+            <div class="box-4 box">
+                <img src="images/world-icon.png" alt="">
+                <h3>MONITORIZARE GPS ÎN TIMP REAL</h3>
+                <p>Toate camioanele noastre sunt monitorizate prin satelit, atît pentru a crește transparența față de client, dar și pentru a fi eficienți.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services reveal">
+        <div class="content">
+            <p>Servicii</p>
+            <div class="image">
+                <img src="images/icon_truck.png" alt="">
+            </div>
+            <div class="title">
+                <h1>Servicii de Transport</h1>
+            </div>
+        </div>
+        <div class="content-info">
+            <h5>În cadrul companiei nostre veti gasi solutiile optime in domeniul transportului de marfa, la cel mai bun raport calitate-pret-rapiditate, potrivit cerintelor dumneavoastra.</h5>
+            <p>Compania de expeditii MOLDCARGO-TRANS are ca obiect de activitate intermedierea transporturilor rutiere de marfa (interne si internationale). Obiectivul nostru este de a practica servicii rapide la preturi accesibile, in care primeaza cerintele clientului nostru.</p>
+            <button type="submit"><a href="services">MAI MULT</a></button>
+        </div>
+        
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="title">
+            <p>TESTIMONIALE</p>
+            <h2 class="title">Companie excelenta, servicii de <span>calitate</span></h2>
+            <div class="arrow left" onclick="plusTestimonial(-1)">&#10094;</div>
+            <div class="arrow right" onclick="plusTestimonial(1)">&#10095;</div>
+            <img src="images/testimonials_img.png" alt="">
+        </div>
+        <div class="content">
+            <div class="testimonial-slides content-1 w3-animate-opacity">
+                <div class="box-1 box">
+                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur minima suscipit ratione, aliquam autem quae assumenda dolor veritatis fuga mollitia illum sed pariatur laboriosam vitae, beatae consequatur! Dolor, eaque reprehenderit."</p>
+                    <div class="author">
+                        <i class="fa-classic fa-solid fa-quote-left"></i>                   <div class="name">
+                            <h6>Nicolae Petru</h6>
+                            <p>Sef EuroAcres</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-2 box">
+                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum dolores, nam odio omnis fuga nisi corporis obcaecati nostrum corrupti hic amet beatae molestias mollitia voluptate, natus quos. Quaerat, repellat expedita."</p>
+                <div class="author">
+                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    <div class="name">
+                        <h6>Iurie Popa</h6>
+                        <p>Menager EuroProd</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="testimonial-slides content-2 w3-animate-opacity">
+                <div class="box-1 box">
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto itaque libero amet aut nihil sapiente tempore dignissimos odio, accusamus, reprehenderit eum natus rem maiores aliquid ducimus dolorum praesentium iste."</p>
+                    <div class="author">
+                        <i class="fa-sharp fa-solid fa-quote-left"></i>
+                        <div class="name">
+                            <h6>Sandu Gavrilita</h6>
+                            <p>Director ManGroup</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-2 box">
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eum ipsam repudiandae commodi quaerat. Adipisci praesentium dolores odio ipsam earum impedit eligendi autem, atque ducimus officiis quae architecto perferendis? Amet!"</p>
+                <div  class="author">
+                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    <div class="name">
+                        <h6>Andrei Dumitrescu</h6>
+                        <p>Director Trans-EET</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+            
+
+    </section>
+
+    <!-- RESULTS -->
+    <section class="results reveal">
+        <div class="name">
+            <h1>MOLDCARGO<span>TRANS</span></h1>
+            
+        </div>
+        <div class="content">
+            <div class="box-3 box" id="counter">
+                <h2 class="counter-value" data-count="100">0</h2><span>%</span>
+                <p>Calitate</p>
+            </div>
+            <div class="box-1 box" id="counter">
+                <h2 class="counter-value" data-count="50">0</h2><span>orașe</span>
+                <p>Acoperite in intreaga lume</p>
+            </div>
+            <div class="box-2 box" id="counter">
+                <h2 class="counter-value" data-count="150">0</h2>
+                <p>Clienţi satisfacuţi</p>
+            </div>
+            <div class="box-4 box" id="counter">
+                <h2 class="counter-value" data-count="50">0 <span></span></h2>
+                <p>Marfuri livrate</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faqs">
+        <div class="title">
+            <h1>FAQ</h1>
+            <h2>Întrebari generale</h2>
+        </div>
+        
+        <div class="faq_container">
+            <div class="faq">
+                <div class="faq_question open">CE DOCUMENTE TREBUIE PASTRATE LA BORDUL UNUI VEHICUL?</div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer">Permis de conducere corepunzator tipului de camion
+                        atestat profesional (daca masina depaseste masa maxima autorizata de 3,5 tone)
+                        Act de identitate
+                        Legitimatia soferului sau copie de pe contract de munca.</div>
+                </div>
+            </div>
+    
+            <div class="faq">
+                <div class="faq_question">CE DOCUMENTE SUNT NECESARE PENTRU A FACE TRANSPORT EXTERN?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">Pentru a efectua transport de marfuri pe extern aveti nevoie in primul rand de Licenta pentru transport rutier public de marfuri in trafic international.</div>
+                </div>
+            </div>
+    
+            <div class="faq">
+                <div class="faq_question">CE ESTE TRANSPORTUL RUTIER PUBLIC?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">Transportul rutier public este transportul efectuat pe baza de contract, contra plata, de catre operatorii de transport rutier care detin in proprietate sau cu orice alt titlu vehicule rutiere.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="content">
+            <div class="logo">
+                <a href="index.html"><h2>MOLDCARGO-TRANS</h2></a>
+                <div class="social-medias">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="location">
+                <h3>Oficii Chisinau Centru</h3>
+                <p>Strada Grigore Ureche 12-28</p>
+                <p>Strada Alexandru cel Bun 32</p>
+                <h3 class="loc">Oficii Chisinau Botanica</h3>
+                <p>71/6, Dacia Boulevard</p>
+                <p>7/1, Strada Nicolae Zelinski</p>
+            </div>
+            <div class="contact">
+                <h3>Cariera</h3>
+                <p>Ești interesat să lucrezi cu noi?</p>
+                <p>moldcargo@trans.com</p>
+                <h3 class="phone">Telefon</h3>
+                <p>+373 060 510 236</p>
+                <p>+373 060 132 295</p>
+            </div>
+            <div class="contact-us">
+                <h3>Aveti vreo intrebare?</h3>
+                <button type="submit"><a href="contact">Contacteaza-ne</a></button>
+                <p>Discuta cu noi pentru mai multe detalii</p>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active"><a href="home">Acasă</a></li>
+                <li class="non-active"><a href="about">Despre Noi</a></li>
+                <li class="non-active"><a href="career">Carieră</a></li>
+                <li class="non-active"><a href="services">Servicii</a></li>
+                <li class="non-active"><a href="contact">Contacte</a></li>
+            </ul>
+            <p>© 2022 MOLDCARGO-TRANS | Dezvoltat de <a target="_blank" href="https://webscustoms.com">WEBSCUSTOMS</a></p>
+        </div>
+    </section>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
