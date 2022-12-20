@@ -42,7 +42,7 @@ div::selection
 }
 
 /* PRELOAD  */
-.loader_bg
+.loader_bg 
 {
     position: fixed;
     z-index: 999999;
@@ -54,12 +54,16 @@ div::selection
     justify-content: center;
 }
 
-.loader
+.loader_bg h2
 {
     animation: loader 1s ease-in-out;
+    font-family: 'inter';
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blue-color);
 }
 
-.loader::before
+.loader_bg h2::before
 {
     animation-delay: .5s;
 }
@@ -67,15 +71,15 @@ div::selection
 @keyframes loader {
     0%
     {
-        width: 275px;
+        font-size: 35px;
     }
     50%
     {
-        width: 225px;
+        font-size: 30px;
     }
     100%
     {        
-        width: 275px;
+        font-size: 35px;
     }
 }
 
@@ -131,7 +135,7 @@ div::selection
     opacity: 1;
 }
 
-/* NAV */
+/* NAV */ 
 section.navigation
 {
     height: 8vh;
@@ -540,7 +544,7 @@ section.navigation
     flex-direction: column;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.195);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.069) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     max-width: 300px;
     padding: 0px 50px 50px 50px;
     color: var(--p-color);
@@ -1030,6 +1034,441 @@ section.footer
 .footer .nav p a
 {
     color: var(--main-color);
+}
+
+
+/* ABOUT HTMLLLLLLLLLLLL */
+
+.body-abt
+{
+    font-family: 'inter', sans-serif;
+}
+.services-body section.services
+{
+    margin-top: 0;
+}
+
+.services-body section.services,
+section.about-us
+{
+    height: 80vh;
+    display: flex;
+    padding: 0px 50px;
+    position: relative;
+    top: 10vh;
+}
+
+
+.services-body .services  .image img,
+.about-us .image img 
+{
+    width: 500px;
+}
+.services-body .services .content,
+.about-us .content
+{
+    padding-left: 100px;
+}
+.services-body .services .content .title,
+.about-us .content .title
+{
+    font-family: 'inter', sans-serif;
+    font-size: 13px;
+    color: var(--p-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.services-body .services .content h1,
+.about-us .content h1
+{
+    font-weight: 700;
+    color: var(--h-color);
+}
+.services-body .services .content h1 span,
+.about-us .content h1 span
+{
+    color: var(--main-color);
+}
+.services-body .services .content h4,
+.about-us .content h4
+{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: var(--h-color);
+}
+.services-body .services .content p,
+.about-us .content p
+{
+    margin-top: 30px;
+    font-size: 16px;
+    color: var(--p-color);
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.services-body .services .content h3,
+.about-us .content h3
+{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    letter-spacing: 0.3px;
+    margin-left: 40px;
+    color: var(--h-color);
+
+}
+.services-body .services .content img,
+.about-us .content img
+{
+    position: absolute;
+    left: -40px;
+    top: 10px;
+}
+
+.services-body section.testimonials,
+.about-body section.testimonials
+{
+    margin-top: 200px;
+}
+.services-body .testimonials .content-1,
+.about-body .testimonials .content-1
+{
+    display: none;
+}
+
+
+
+/* SERVICES HTML  */
+.services-body section.services
+{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.services-body .services .content
+{
+    padding-left: 0;
+    padding-right: 100px;
+}
+.services-body .services .content p
+{
+    font-size: 15px;
+}
+.services-body .services .content h3
+{
+    font-size: 15px;
+}
+.services-body .services .image img
+{
+    margin-top: 150px;
+}
+
+.services-body section.features 
+{
+    margin-top: 200px;
+}
+
+
+section.contact
+{
+    padding: 100px 100px 0 100px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+section.contact h2
+{
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--h-color);
+}
+section.contact p
+{
+    color: var(--p-color);
+}
+
+.contact .container form
+{
+    width: 400px;
+}
+
+.contact .container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contact input.name
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    border: 1px solid var(--blue-color);
+    padding: 0 30px;
+    box-shadow: 0px 3px 10px 5px #36363620;
+}
+
+.contact input.email
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    box-shadow: 0px 3px 10px 5px #36363620;
+    border: 1px solid var(--blue-color);
+}
+
+.contact textarea.message
+{
+    border: 1px solid var(--blue-color);
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    padding: 20px 30px;
+    resize: none;
+    box-shadow: 0px 3px 10px 5px #36363626;
+    margin-bottom: 20px;
+}
+
+.contact input.email:focus
+{
+    caret-color: var(--main-color);
+}
+
+.contact input.name:focus
+{
+    caret-color: var(--main-color);
+}
+
+
+.contact textarea.message:focus
+{
+    caret-color: var(--main-color);
+}
+
+.contact .container button
+{
+    width: 100%;
+    background-color: var(--blue-color);
+    color: var(--white);
+    padding: 20px ;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    transition: .3s ease;
+    border: none;
+}
+.contact .container button:hover,
+.contact .container button:active
+{
+    background-color: var(--main-color);
+}
+
+
+/* Career html */
+.career-body .career 
+{
+    padding: 0px 50px;
+    display: flex;
+    height: 60vh;
+    position: relative;
+    top: 100px;
+}
+.career-body .career .title p
+{
+    font-family: 'inter', sans-serif;
+    font-size: 13px;
+    color: var(--p-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.career-body .career h1
+{
+    width: 300px;
+    font-weight: 700;
+    color: var(--h-color);
+}
+.career-body .career h1 span
+{
+    color: var(--main-color);
+}
+.career-body .career h4
+{
+    width: 450px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: var(--h-color);
+}
+.career-body .career p
+{
+    margin-top: 30px;
+    font-size: 16px;
+    color: var(--p-color);
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.career-body .career h3
+{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    letter-spacing: 0.3px;
+    margin-left: 40px;
+    color: var(--h-color);
+}
+.career-body .career .content
+{
+    padding-left: 100px;
+}
+.career-body .career .content h3
+{
+    margin-left: 0px;
+}
+.career-body .career .content p
+{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+.career-body .career.job
+{
+    display: block;
+    height: 250vh;
+}
+.career-body .career.job .content
+{
+    margin-top: 50px;
+    padding-left: 0px;
+}
+.career-body .career.job .title h1
+{
+    width: 900px;
+}
+.career-body .career.job .content h4
+{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 18px;
+}
+.career-body .career.job .content h3
+{
+    color: var(--main-color);
+}
+.career-body .career.job .content p
+{
+    font-size: 13px;
+}
+.career-body .career.job .content .title
+{
+    font-size: 14px;
+    color: var(--blue-color);
+}
+
+
+/* Contact.HTML */
+.contact-body .contacts
+{
+    display: flex;
+    height: 100vh;
+    padding: 0px 50px;
+    position: relative;
+    top: 50px;
+}
+.contact-body .contacts .content .box-1
+{
+    margin-top: 50px;
+}
+.contact-body .contacts .content .title
+{
+    font-family: 'inter', sans-serif;
+    font-size: 13px;
+    color: var(--p-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contact-body .contacts .content h1
+{
+    width: 100%;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--h-color);
+}
+.contact-body .contacts .content .box
+{
+    padding: 20px 0;
+    display: flex;
+}
+.contact-body .contacts .content .box .icon
+{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-body .contacts .content .box i
+{
+    color: var(--blue-color);
+    font-size: 25px;
+}
+.contact-body .contacts .content .box .info
+{
+    margin-left: 30px;
+}
+.contact-body .contacts .content .box p
+{
+    color: var(--h-color);
+    font-family: 'inter', sans-serif;
+    font-weight: 600;
+}
+.contact-body .contacts .content .box-4 .info .media
+{
+    padding: 10px 0;
+}
+.contact-body .contacts .content .box-4 .info .media i
+{
+    padding: 0 5px;
+}
+.contact-body .contacts .contact
+{
+    font-family: 'inter', sans-serif;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.contact-body .contacts .contact h2
+{
+    font-weight: 700;
+    color: var(--h-color);
+}
+.contact-body .contacts .contact p
+{
+    color: var(--p-color);
+
+}
+.contact-body .contacts .contact .container
+{
+    margin-top: 50px;
 }
 
 
@@ -1796,7 +2235,7 @@ section.footer
     .testimonials .title h2
     {
         font-size: 25px;
-        width: 300px;
+        width: 100%;
     }
     .testimonials .title img
     {
@@ -1999,10 +2438,235 @@ section.footer
         display: flex;
         padding: 0 25px;
     }
+
+
+
+    .about-body .about-us 
+    {
+        height: 185vh;
+        display: block;
+    }
+    .about-body .about-us .image img
+    {
+        width: 300px;
+    }
+    .about-body .about-us .content
+    {
+        padding-left: 0;
+    }
+    .about-body .about-us .content h1
+    {
+        font-size: 30px;
+    }
+    .about-body .about-us .content p
+    {
+        font-size: 15px;
+    }
+    .about-body .results
+    {
+        margin-bottom: 200px;
+    }
+
+
+
+    .career-body .career
+    {
+        display: flex;
+        flex-direction: column;
+        height: 140vh;
+    }
+    .career-body .career .title h4
+    {
+        width: 100%;
+    }
+    .career-body .career p 
+    {
+        margin-top: 0;
+    }
+    .career-body .career .content
+    {
+        padding-left: 0px;
+    }
+    .career-body .career.job .title h1
+    {
+        width: 100%;
+        font-size: 30px;
+    }
+    .career-body .career.job
+    {
+        height: 430vh;
+    }
+
+
+
+    .services-body section.services
+    {
+        display: flex;
+        flex-direction: column;
+        height: 230vh;
+        top: 0;
+    }
+    .services-body .services .content
+    {
+        padding-right: 0px;
+        margin-left: 0;
+    }
+    section.services .content h1
+    {
+        font-size: 30px;
+    }
+    section.services .content h4
+    {
+        width: 100%;
+    }
+    .services-body .services .image img
+    {
+        width: 300px;
+    }
+    section.contact
+    {
+        padding: 100px 75px;
+        height: 130vh;
+    }
+    section.contact h2
+    {
+        width: 100%;
+        font-size: 30px;
+    }
+
+
+
+    .contact-body .contacts
+    {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+    .contact-body .contacts .content h1
+    {
+        font-size: 35px;
+    }
+    .contact-body .contacts .contact
+    {
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+    @keyframes loader {
+        0%
+        {
+            font-size: 30px;
+        }
+        50%
+        {
+            font-size: 20px;
+        }
+        100%
+        {        
+            font-size: 30px;
+        }
+    }
 }
 
 @media only screen and (max-width:375px)
 {
+    .contact-body .contacts .content h1
+    {
+        font-size: 30px;
+    }
+    .contact-body .contacts .content .box .icon 
+    {
+        width: 60px;
+        height: 60px;
+    }
+    .contact-body .contacts .content .box .info
+    {
+        margin-left: 18px;
+    }
+    .contact-body .contacts .content .box p
+    {
+        font-size: 13px;
+    }
+    .contact-body .contacts .contact
+    {
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+
+    .services-body .services .image img
+    {
+        width: 250px;
+    }
+    .services-body section.services
+    {
+        height: 250vh;
+    }
+    section.contact
+    {
+        padding: 100px 50px;
+        height: 130vh;
+    }
+
+
+
+    .career-body .career h1
+    {
+        font-size: 25px;
+    }
+    .career-body .career
+    {
+        height: 170vh;
+    }
+    .career-body .career .title h4
+    {
+        font-size: 15px;
+    }
+    .career-body .career .content p 
+    {
+        font-size: 14px;
+    }
+    .career-body .career.job
+    {
+        height: 450vh;
+    }
+    .career-body .career.job .title h1
+    {
+        width: 100%;
+        font-size: 20px;
+    }
+    .career-body .career.job .content h4
+    {
+        font-size: 16px;
+    }
+
+    .about-body .about-us 
+    {
+        height: 200vh;
+        display: block;
+    }
+    .about-body .about-us .image img
+    {
+        width: 250px;
+    }
+    .about-body .about-us .content h1
+    {
+        font-size: 25px;
+    }
+    .about-body .about-us .content p
+    {
+        font-size: 14px;
+    }
+    .about-body .about-us .content h3
+    {
+        font-size: 15px;
+    }
+    .about-body .results
+    {
+        margin-bottom: 250px;
+    }
+
+
 
     .navigation .logo h2
     {
@@ -2071,9 +2735,49 @@ section.footer
 }
 @media only screen and (max-width:320px)
 {
+    .contact-body .contacts .content .box .icon 
+    {
+        width: 55px;
+        height: 55px;
+    }
+    .contact-body .contacts .content .box .info
+    {
+        margin-left: 15px;
+    }
+
+    .services-body .services .image img
+    {
+        width: 200px;
+    }
+    .services-body section.services
+    {
+        height: 270vh;
+    }
+    section.contact
+    {
+        padding: 100px 50px;
+        height: 130vh;
+    }
+
+
+
+    .career-body .career
+    {
+        height: 180vh;
+    }
+    .career-body .career.job
+    {
+        height: 470vh;
+    }
+
+
+    .about-body .about-us .image img
+    {
+        width: 200px;
+    }
     .navigation .logo h2
     {
-        font-size: 20px;
+        font-size: 15px;
     }
     .img1-content,
     .img2-content,
@@ -2102,3 +2806,10 @@ section.footer
         left: 15px;
     }
 }
+
+
+
+
+
+
+

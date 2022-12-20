@@ -94,8 +94,6 @@ $(window).scroll(function() {
 // HOME BUTTON APPEAR
 $window = $(window);
 $(window).scroll(function() {
-  // var results = $('.results').offset().top;
-  // var features = $('.features').offset().top;
   if($window.scrollTop() > 800)
   {
     $('.home-btn').addClass("active");
