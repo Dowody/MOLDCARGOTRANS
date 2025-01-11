@@ -54,8 +54,9 @@ div::selection
     justify-content: center;
 }
 
-.loader_bg h2
+.loader_bg img
 {
+    width: 15%;
     animation: loader 1s ease-in-out;
     font-family: 'inter';
     font-size: 40px;
@@ -71,15 +72,15 @@ div::selection
 @keyframes loader {
     0%
     {
-        font-size: 35px;
+        width: 10%;
     }
     50%
     {
-        font-size: 30px;
+        width: 13%;
     }
     100%
     {        
-        font-size: 35px;
+        width: 10%;
     }
 }
 
